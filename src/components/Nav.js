@@ -1,7 +1,7 @@
 import '../App.css';
 function Nav() {
 return (
-    <nav className='App'>
+    <nav className='nav'>
         <ul className='links'>
             <li><a href='url'>Home</a></li>
             <li><a href='url'>About</a></li>

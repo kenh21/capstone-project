@@ -1,9 +1,9 @@
 import '../App.css';
 function Footer() {
     return (
-        <footer className='App'>
+        <footer className='footer'>
             <img src='url'/>
-           <nav className='flex flex-col gap-2'>
+           <nav>
         <ul>
             <li><a href='url'>Home</a></li>
             <li><a href='url'>About</a></li>

@@ -1,8 +1,8 @@
 import '../App.css';
 function Header() {
     return (
-        <header className="App">
-            <img src='/Images/logo.jpg' alt='logo'/>
+        <header className="headers">
+            <img src='/Images/logo.jpg' alt='logo' className='header-img'/>
         </header>
     )
 }

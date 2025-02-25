@@ -2,7 +2,7 @@ import '../App.css';
 
 function Main() {
     return (
-        <main className='App'>
+        <main className='main'>
             This is the main part!
         </main>
     )
