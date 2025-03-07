@@ -17,8 +17,8 @@ const Menu = () => {
    <>
    <Button
    onClick={handleShow} 
-   className='d-lg-none position-absolute top-10 end-0 translate-middle btn-color'>
-    <Image src='/Images/menu-1.jpg' fluid/>
+   className='d-lg-none d-flex pe-4 justify-content-end btn-color'>
+    <Image src='/Images/menu-1.jpg' />
    </Button>
     <Offcanvas 
     show={show} 
