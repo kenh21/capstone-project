@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Col }from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -35,12 +35,12 @@ const Menu = () => {
         <Col>
         <Offcanvas.Body className='mt-3'>
             <Nav className='justify-content-end flex-grow-1 pe-3'>
-              <Nav.Link className='text-dark' href='#'>Home</Nav.Link>
-              <Nav.Link className='text-dark' href='#'>About</Nav.Link>
-              <Nav.Link className='text-dark' href='#'>Menu</Nav.Link>
-              <Nav.Link className='text-dark' href='#'>Reservations</Nav.Link>
-              <Nav.Link className='text-dark' href='#'>Order Online</Nav.Link>
-              <Nav.Link className='text-dark' href='#'>Login</Nav.Link>
+              <Nav.Link className='text-dark fw-bolder' href='#'>Home</Nav.Link>
+              <Nav.Link className='text-dark fw-bolder' href='#'>About</Nav.Link>
+              <Nav.Link className='text-dark fw-bolder' href='#'>Menu</Nav.Link>
+              <Nav.Link className='text-dark fw-bolder' href='#'>Reservations</Nav.Link>
+              <Nav.Link className='text-dark fw-bolder' href='#'>Order Online</Nav.Link>
+              <Nav.Link className='text-dark fw-bolder' href='#'>Login</Nav.Link>
             </Nav>
         </Offcanvas.Body>
         </Col>
