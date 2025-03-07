@@ -94,3 +94,7 @@ ul {
   background-color: white !important;
   border-color: white !important;
 }
+
+.hero, .testimonials, .footer {
+  background-color: #495e57 !important;
+}
