@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/Header';
-import Nav from './components/Nav';
+import NavBar from './components/NavBar';
 import Menu from './components/Menu'
 import Main from './components/Main';
 import Footer from './components/Footer';
@@ -12,8 +12,8 @@ function App() {
     <div className='layout'>
     <div className='header'>
       <Header />
-      <Nav />
-        
+      <NavBar />
+      <Menu />
     </div>
     <div className='main'>
     <Main />
