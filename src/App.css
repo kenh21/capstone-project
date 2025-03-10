@@ -98,3 +98,14 @@ ul {
 .hero, .testimonials, .footer {
   background-color: #495e57 !important;
 }
+
+.img-border-style {
+  border-radius: 16px !important;
+}
+
+.hero-section-h1-text {
+  color: #F4CE14 !important;
+  font-weight: 400;
+  font-family: 'Markazi Text';
+  font-size: 64px;
+}
