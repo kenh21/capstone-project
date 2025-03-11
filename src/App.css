@@ -71,25 +71,6 @@ ul {
   padding: none;
 }
 
-@media (max-width: 991px) {
-  .links {
-    display: none;
-  }
-}
-
-@media (min-width:930px) {
-  .menu .toggle-button {
-    display: none;
-  }
-}
-
-#bar {
-  height: 3px;
-  width: 100%;
-  background-color: white;
-  border-radius: 16px;
-}
-
 .btn-color {
   background-color: white !important;
   border-color: white !important;
@@ -108,4 +89,24 @@ ul {
   font-weight: 400;
   font-family: 'Markazi Text';
   font-size: 64px;
+}
+
+.main-h2-text {
+  color: white;
+  font-family: 'Markazi Text';
+  font-size: 40px;
+}
+
+.main-body-text {
+  color: white;
+  font-family: 'Karla';
+  font-size: 16px;
+}
+
+.main-button {
+  background-color: #F4CE14 !important;
+  border-color: #F4CE14 !important;
+  font-weight: bolder !important;
+  font-size: 20px !important;
+  font-family: 'Karla';
 }
