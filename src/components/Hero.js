@@ -12,9 +12,9 @@ function Hero() {
         align-content-center
         ms-5">
         <h1 className="hero-section-h1-text">Little Lemon</h1>
-        <h3>Chicago</h3>
-        <p>Velit sint ea incididunt velit commodo amet aute et in sunt deserunt ipsum sint minim.</p>
-        <Button href='#' type="submit" className="mt-5 p-3">
+        <h3 className="main-h2-text mt-2">Chicago</h3>
+        <p className="main-body-text">Velit sint ea incididunt velit commodo amet aute et in sunt deserunt ipsum sint minim.</p>
+        <Button href='#' type="submit" className="mt-5 p-3 main-button">
             Reserve a Table
         </Button>
         </Col>
