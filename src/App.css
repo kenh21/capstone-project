@@ -110,3 +110,8 @@ ul {
   font-size: 20px !important;
   font-family: 'Karla';
 }
+
+.cards-background {
+  background-color: #edefee !important;
+  border-color: white !important;
+}

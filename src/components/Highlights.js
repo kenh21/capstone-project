@@ -30,19 +30,19 @@ function Highlights () {
                     </Button>
                 </Col>
             </Row>
-            <Row>
-                <Col>
+            <Row className="mt-5 justify-content-evenly">
+                <Col className="p-0 m-0 col-auto">
                 <Cards image={GreekSalad} title="Greek salad" cost={12.99} text="The famous greek salad of
                 crispy lettuce, peppers, olives and our Chicago style
                 feta cheese, garnished with crunchy garlic and
                 rosemary croutons." display="none"/>
                 </Col>
-                <Col>
+                <Col className="p-0 m-0 col-auto">
                 <Cards image={Bruchetta} title="Bruschetta" cost={5.99} text="Our Bruschetta
                 is made from grilled bread that has been smeared with
                 garlic and seasoned with salt and olive oil." display="none"/>
                 </Col>
-                <Col>
+                <Col className="p-0 m-0 col-auto">
                 <Cards image={LemonDessert} title="Lemon Dessert" cost={5.00} text="This comes straight
                 from grandma's recipe book, every last ingredient
                 has been sourced and is authentic
