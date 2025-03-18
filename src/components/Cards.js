@@ -1,4 +1,4 @@
-import { Col, Card, Button, Container, Row } from "react-bootstrap";
+import { Col, Card, Button, Container } from "react-bootstrap";
 import { propTypes } from "react-bootstrap/esm/Image";
 import '../App.css';
 

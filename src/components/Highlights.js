@@ -2,6 +2,7 @@ import { Col, Row, Container, Button } from "react-bootstrap";
 import Bruchetta from "../Images/bruchetta.jpg"
 import GreekSalad from "../Images/greek-salad.jpg"
 import LemonDessert from "../Images/lemon dessert.jpg"
+import PotatoOmelet from "../Images/potato-omelet.jpg"
 import '../App.css';
 import Cards from "./Cards";
 
@@ -47,6 +48,12 @@ function Highlights () {
                 from grandma's recipe book, every last ingredient
                 has been sourced and is authentic
                 as can be imagined." display="none"/>
+                </Col>
+                <Col className="d-none d-xxl-flex p-0 m-0 col-auto">
+                <Cards image={PotatoOmelet} title="Potato Omelet" cost={7.00} text="Fluffy, golden potatoes
+                and perfectly beaten eggs unite in this Spanish-inspired delight,
+                served warm with a sprinkle of paprika and a side of crusty bread."
+                display="none" />
                 </Col>
             </Row>
         </Container>
