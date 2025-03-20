@@ -4,10 +4,18 @@ function Ratings (props) {
     return (
         <Container fluid className="m-2">
         <Col className="d-flex justify-content-center">
-        <Card className="text-center d-flex justify-content-center align-items-center"
+        <Card className="
+        text-center 
+        d-flex 
+        justify-content-center 
+        align-items-center"
         style={{ width: '200px', height: '200px' }}>
       <Card.Title className="ratings-text">{props.header}: 5/5</Card.Title>
-      <Image className="d-flex justify-content-center align-items-center img-border-style"
+      <Image className="
+      d-flex 
+      justify-content-center 
+      align-items-center 
+      img-border-style"
        variant="top"
       src={props.image} height={50} width={50}/>
       <Card.Body>
