@@ -8,7 +8,10 @@ function Testimonials() {
 return (
     <Container fluid className="p-3">
     <Row className="m-5">
-        <h2 className="d-flex justify-content-center align-items-center testimonials-h2-text">Testimonials</h2>
+        <h2 className="d-flex
+        justify-content-center
+        align-items-center
+        testimonials-h2-text">Testimonials</h2>
     </Row>
     <Row className="gx-2 m-5 p-3">
     <Col className="col-md-3">
