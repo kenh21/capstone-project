@@ -151,6 +151,10 @@ ul {
   border-color: white !important;
 }
 
+.maxwidth-1200 {
+  max-width: 1200px !important;
+}
+
 @media only screen and (min-width:1200px){
   .img-top {
     transform: translate(200px, -10px);

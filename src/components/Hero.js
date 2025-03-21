@@ -14,11 +14,15 @@ function Hero() {
         <h1 className="hero-section-h1-text">Little Lemon</h1>
         <h3 className="main-h2-text mt-2">Chicago</h3>
         <p className="main-body-text">Velit sint ea incididunt velit commodo amet aute et in sunt deserunt ipsum sint minim.</p>
-        <Button href='#' type="submit" className="mt-5 p-3 main-button">
+        <Button href='#' type="submit" className="mt-5 p-3 mb-md-5 main-button">
             Reserve a Table
         </Button>
         </Col>
-        <Col className=" d-flex justify-content-center align-items-center">
+        <Col className="
+        d-flex justify-content-center
+        align-items-center
+        lg-pe-5
+        justify-content-lg-end">
             <Image src='/Images/hero-image.jpg' alt='hero-image' className="
             m-5
             rounded-4
