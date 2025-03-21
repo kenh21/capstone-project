@@ -13,6 +13,7 @@ return (
         align-items-center
         testimonials-h2-text">Testimonials</h2>
     </Row>
+    <Container className="justify-content-center maxwidth-1200">
     <Row className="gx-2 m-5 p-3">
     <Col className="col-md-3">
     <Ratings header="Rating" title="Noah" image={Profile1} text="Delicious food, great service!"/>
@@ -27,6 +28,7 @@ return (
     <Ratings header="Rating" title="Chloe" image={Profile4} text="Wonderful food and friendly staff!"/>
     </Col>
     </Row>
+    </Container>
     </Container>
 );
 };

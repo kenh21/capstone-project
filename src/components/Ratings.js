@@ -10,7 +10,7 @@ function Ratings (props) {
         justify-content-center 
         align-items-center"
         style={{ width: '200px', height: '200px' }}>
-      <Card.Title className="ratings-text">{props.header}: 5/5</Card.Title>
+      <Card.Title className="ratings-text pt-3">{props.header}: 5/5</Card.Title>
       <Image className="
       d-flex 
       justify-content-center 
