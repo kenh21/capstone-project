@@ -16,7 +16,7 @@ return (
     <Nav className='
     justify-content-end
     flex-nowrap
-    flex-grow-1
+    text-nowrap
     d-none
     d-sm-none
     d-md-none
