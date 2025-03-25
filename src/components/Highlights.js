@@ -24,7 +24,7 @@ function Highlights () {
                 me-5 
                 mt-5 
                 pe-5">
-                    <Button href='#' type="submit" className="
+                    <Button href='/OnlineMenu' type="submit" className="
                     p-3 
                     main-button">
                     Online Menu
