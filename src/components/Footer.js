@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 import { Col, Row, Container, Image, Nav } from 'react-bootstrap';
 import FooterImg from '../Images/footer.jpeg';
+import { HashLink } from 'react-router-hash-link';
 
 function Footer() {
     return (
@@ -12,12 +13,12 @@ function Footer() {
             </Col>
             <Col className='mt-2'>
            <Nav className='d-flex flex-column justify-content-space-around ms-3'>
-              <Nav.Link className='text-dark fw-bolder ' href='#'>Home</Nav.Link>
-              <Nav.Link className='text-dark fw-bolder ' href='#'>About</Nav.Link>
-              <Nav.Link className='text-dark fw-bolder ' href='#'>Menu</Nav.Link>
-              <Nav.Link className='text-dark fw-bolder ' href='#'>Reservations</Nav.Link>
-              <Nav.Link style={{height: 40}} className='text-dark fw-bolder ' href='#'>Order Online</Nav.Link>
-              <Nav.Link className='text-dark fw-bolder ' href='#'>Login</Nav.Link>
+              <HashLink className='text-dark fw-bolder ps-3 pb-3' smooth to='#header'>Home</HashLink>
+              <HashLink className='text-dark fw-bolder ps-3 pb-2' smooth to='#about'>About</HashLink>
+              <Nav.Link className='text-dark fw-bolder ' href='/OnlineMenu'>Menu</Nav.Link>
+              <Nav.Link className='text-dark fw-bolder ' href='/Reservations'>Reservations</Nav.Link>
+              <Nav.Link style={{height: 40}} className='text-dark fw-bolder ' href='/OnlineMenu'>Order Online</Nav.Link>
+              <Nav.Link className='text-dark fw-bolder ' href='/Login'>Login</Nav.Link>
         </Nav>
         </Col>
         <Col className='mt-2'>
