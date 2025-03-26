@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import './App.css';
 import Layout from './Layout';
 import OnlineMenu from './components/OnlineMenu';

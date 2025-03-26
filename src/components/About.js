@@ -5,7 +5,7 @@ import '../App.css';
 
 function About() {
     return (
-        <Container fluid>
+        <Container id="about" fluid>
             <Row className="mt-5 mb-5">
                 <Col className="
                 d-flex-column 
