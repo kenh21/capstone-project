@@ -76,6 +76,20 @@ ul {
   border-color: white !important;
 }
 
+.menu-btn {
+  background-color: #F4CE14 !important;
+  font-size: 16px !important;
+  font-family: 'Karla' !important;
+  color: black !important;
+  font-weight: 600 !important;
+  border-color: #edefee !important;
+  border-radius: 16px !important;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-end;
+  
+}
+
 .hero, .testimonials, .footer {
   background-color: #495e57 !important;
 }

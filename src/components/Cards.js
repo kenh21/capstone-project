@@ -9,14 +9,14 @@ function Cards (props) {
                 <Card className="cards-background my-4"
                       style={{ width: '265px', height: '439px' }}>
                 <Card.Img variant="top" src={props.image} />
-                <Card.Body>
+                <Card.Body className="d-flex row">
                     <Card.Title className="d-flex justify-content-between">
                         {props.title} <span></span> ${props.cost.toFixed(2)}
                     </Card.Title>
-                    <Card.Text className="mt-3">
+                    <Card.Text className="mt-3 pb-0 mb-1">
                     {props.text}
                     </Card.Text>
-                    <Button variant="primary" className={`d-${props.display}`}>
+                    <Button variant="submit" className={`d-${props.display} menu-btn w-50 ms-1`}>
                     Add to Order
                     </Button>
                 </Card.Body>
