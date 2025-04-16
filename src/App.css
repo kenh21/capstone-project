@@ -87,11 +87,13 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-self: flex-end;
-  
 }
 
 .hero, .testimonials, .footer {
   background-color: #495e57 !important;
+}
+.rest-img {
+  max-width: 70% !important;
 }
 
 .img-border-style {
