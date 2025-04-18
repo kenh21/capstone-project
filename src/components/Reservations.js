@@ -23,9 +23,9 @@ function Reservations () {
   <form>
     <Row className="justify-content-evenly">
       <Col className="col-1">
-    <label for="res-date">Choose Date</label>
+    <label htmlFor="res-date">Choose Date</label>
     <input type="date" id="res-date"></input>
-    <label for="res-time">Choose Time</label>
+    <label htmlFor="res-time">Choose Time</label>
     <select id="res-time">
       <option>17:00</option>
       <option>18:00</option>
@@ -34,9 +34,9 @@ function Reservations () {
       <option>21:00</option>
       <option>22:00</option>
     </select>
-    <label for="guests">Number of Guests</label>
+    <label htmlFor="guests">Number of Guests</label>
     <input type="number" placeholder="1" min={1} max={10} id="guests"></input>
-    <label for="occasion">Occasion</label>
+    <label htmlFor="occasion">Occasion</label>
     <select id="occasion">
       <option>Birthday</option>
       <option>Anniversary</option>
