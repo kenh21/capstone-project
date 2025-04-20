@@ -60,6 +60,13 @@
   min-width: 300px
 }
 
+.forms {
+  display: grid;
+  justify-self: center;
+  width: 500px;
+  border-radius: 16px;
+}
+
 a:link {
   text-decoration: none;
   color: black;
@@ -240,6 +247,13 @@ ul {
      justify-content: center;
      transform: translate(-210px, 50px);
    }
+
+   .forms {
+    display: grid;
+    justify-self: center;
+    width: 400px;
+    border-radius: 16px;
+  }
 }
 
 @media  only screen and (max-width: 490px) {
@@ -271,6 +285,12 @@ ul {
      justify-content: center;
      transform: translate(30%, 0%)
    }
+   .forms {
+    display: grid;
+    justify-self: center;
+    width: 300px;
+    border-radius: 16px;
+  }
 }
 @media  only screen and (max-width: 380px) {
   .img-col {
