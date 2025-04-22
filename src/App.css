@@ -62,9 +62,25 @@
 
 .forms {
   display: grid;
-  justify-self: center;
-  width: 500px;
+  width: 400px !important;
   border-radius: 16px;
+}
+
+.submitBtn {
+  width: 198px;
+  background-color: #F4CE14 !important;
+  font-size: 16px !important;
+  font-family: 'Karla' !important;
+  color: black !important;
+  font-weight: 600 !important;
+  border-radius: 16px !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-self: center !important;
+  align-content: center !important;
+  border-style: none !important;
+  justify-self: center !important;
+  padding: 15px;
 }
 
 a:link {

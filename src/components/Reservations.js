@@ -37,14 +37,15 @@ function Reservations () {
     <Image src={Restaurant} className="rest-img"/>
     </Row>
     <Container fluid className="hero vh-100 pt-5">
-  <form className="bg-light py-5 forms" onSubmit={handleSubmit}>
-    <Row className="d-col">
-      <Col>
+      <Row className="justify-content-center">
+  <form className="bg-light py-5 forms col-4" onSubmit={handleSubmit}>
+    
     <label htmlFor="date">Choose Date</label>
-    <input name="date" type="date" id="date" onChange={(e) => handleChanges(e)} required></input>
-
+    <input className="my-2" name="date" type="date" id="date" onChange={(e) => handleChanges(e)} required></input>
+      
     <label htmlFor="time">Choose Time</label>
-    <select id="time" name="time" type="time" onChange={(e) => handleChanges(e)} required>
+    <select className="my-2 py-1" id="time" name="time" type="time" onChange={(e) => handleChanges(e)} required>
+      <option>16:00</option>
       <option>17:00</option>
       <option>18:00</option>
       <option>19:00</option>
@@ -52,20 +53,21 @@ function Reservations () {
       <option>21:00</option>
       <option>22:00</option>
     </select>
-
+    
     <label htmlFor="guests">Number of Guests</label>
-    <input name="guests" type="number" placeholder="1" min={1} max={10} id="guests" onChange={(e) => handleChanges(e)} required></input>
-
+    <input className="my-2" name="guests" type="number" placeholder="1" min={1} max={10} id="guests" onChange={(e) => handleChanges(e)} required></input>
+    
+      
     <label htmlFor="occasion">Occasion</label>
-    <select id="occasion" name="occasion" onChange={(e) => handleChanges(e)} required>
+    <select className="my-2 py-1" id="occasion" name="occasion" onChange={(e) => handleChanges(e)} required>
       <option>Birthday</option>
       <option>Anniversary</option>
     </select>
-
-    <input type="submit" value="Make Your reservation"></input>
-    </Col>
-    </Row>
+    
+    <input className="mt-4 submitBtn" type="submit" value="Make Your reservation"></input>
+    
   </form>
+  </Row>
   </Container>
   </Container>
   </>
