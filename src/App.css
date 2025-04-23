@@ -83,6 +83,14 @@
   padding: 15px;
 }
 
+.alerts {
+  width: 400px !important;
+  justify-self:center !important;
+  font-size: 16px !important;
+  font-family: 'Karla' !important;
+  font-weight: 600 !important;
+}
+
 a:link {
   text-decoration: none;
   color: black;
