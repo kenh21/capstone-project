@@ -1,6 +1,7 @@
 import { Col, Container, Row, Image, Alert } from "react-bootstrap";
 import NavBar from "../components/NavBar"
 import  Header from "../components/Header"
+import  Menu from "../components/Menu";
 import Restaurant from "../Images/restaurant.jpg"
 import '../App.css';
 import { useState } from "react";
@@ -59,6 +60,7 @@ function Reservations () {
       </Col>
       <Col className="py-3 align-content-center">
       <NavBar />
+      <Menu />
       </Col>
     </Row>
     <Row className="justify-content-center pb-5">
