@@ -91,6 +91,12 @@
   font-weight: 600 !important;
 }
 
+.select {
+  font-size: 16px !important;
+  font-family: 'Karla' !important;
+  font-weight: 600 !important;
+}
+
 a:link {
   text-decoration: none;
   color: black;

@@ -6,6 +6,17 @@ import '../App.css';
 import { useState } from "react";
 
 function Reservations () {
+  const [availableTimes, setAvailableTimes] = useState([
+    {id: 1, time: '14:00', isDisabled: false},
+    {id: 2, time: '15:00', isDisabled: false},
+    {id: 3, time: '16:00', isDisabled: false},
+    {id: 4, time: '17:00', isDisabled: false},
+    {id: 5, time: '18:00', isDisabled: false},
+    {id: 6, time: '19:00', isDisabled: false},
+    {id: 7, time: '20:00', isDisabled: false},
+    {id: 8, time: '21:00', isDisabled: false},
+    {id: 9, time: '22:00', isDisabled: false},
+  ]);
   const [showAlert, setShowAlert] = useState(false);
   const [values, setValues] = useState ( {
       date: '',
@@ -15,14 +26,28 @@ function Reservations () {
   })
 
   const handleChanges = (e) => {
-    setValues({...values, [e.target.name]:[e.target.value]})
+    setValues({...values, [e.target.name]:e.target.value})
   }
+
+  const handleBooking = (values) => {
+    setAvailableTimes(availableTimes =>
+      availableTimes.map(timeSlot => {
+        if (values.time === timeSlot.time) {
+          return {...timeSlot, isDisabled: true };
+        }
+        return timeSlot;
+      })
+    );
+    console.log(values.time);
+  };
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(values);
     setShowAlert(true);
     setTimeout(() => setShowAlert(false), 3000);
+    handleBooking(values, availableTimes);
   }
 
   return (
@@ -45,19 +70,15 @@ function Reservations () {
     <label htmlFor="date">Choose Date</label>
     <input className="my-2" name="date" type="date" id="date" onChange={(e) => handleChanges(e)} required></input>
     <label htmlFor="time">Choose Time</label>
-    <select className="my-2 py-1" id="time" name="time" type="time" onChange={(e) => handleChanges(e)} required>
-      <option>16:00</option>
-      <option>17:00</option>
-      <option>18:00</option>
-      <option>19:00</option>
-      <option>20:00</option>
-      <option>21:00</option>
-      <option>22:00</option>
+    <select className="my-2 py-1 select" id="time" name="time" type="time" onChange={(e) => handleChanges(e)} required>
+      <option value="" disabled selected hidden></option>
+    {availableTimes.map( (items) => <option key={items.id} disabled={items.isDisabled}>{items.time}</option>)}
     </select>
     <label htmlFor="guests">Number of Guests</label>
     <input className="my-2" name="guests" type="number" placeholder="1" min={1} max={10} id="guests" onChange={(e) => handleChanges(e)} required></input>
     <label htmlFor="occasion">Occasion</label>
     <select className="my-2 py-1" id="occasion" name="occasion" onChange={(e) => handleChanges(e)} required>
+      <option value="" disabled selected hidden>Select Occasion</option>
       <option>Birthday</option>
       <option>Anniversary</option>
     </select>
