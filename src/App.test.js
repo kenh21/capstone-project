@@ -1,8 +1,12 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import '@testing-library/jest-dom';
+import Reservations from './components/Reservations';
+jest.mock('react-router-hash-link', () => ({
+    HashLink: ({ children, ...props }) => <a {...props}>{children}</a>,
+  }));
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+test('Renders the Reservations heading', () => {
+    render(<Reservations />);
+    const headingElement = screen.getByText("Make Your reservation Now");
+    expect(headingElement).toBeInTheDocument();
+})
