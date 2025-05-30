@@ -24,3 +24,5 @@ const fetchAPI = function(date) {
 const submitAPI = function(formData) {
     return true;
 };
+window.fetchAPI = fetchAPI;
+window.submitAPI = submitAPI;

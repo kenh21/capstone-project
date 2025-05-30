@@ -7,49 +7,56 @@ import '../App.css';
 import { useState } from "react";
 
 function Reservations () {
-  const [availableTimes, setAvailableTimes] = useState([
-    {id: 1, time: '14:00', isDisabled: false},
-    {id: 2, time: '15:00', isDisabled: false},
-    {id: 3, time: '16:00', isDisabled: false},
-    {id: 4, time: '17:00', isDisabled: false},
-    {id: 5, time: '18:00', isDisabled: false},
-    {id: 6, time: '19:00', isDisabled: false},
-    {id: 7, time: '20:00', isDisabled: false},
-    {id: 8, time: '21:00', isDisabled: false},
-    {id: 9, time: '22:00', isDisabled: false},
-  ]);
+  const [availableTimes, setAvailableTimes] = useState([]);
   const [showAlert, setShowAlert] = useState(false);
   const [values, setValues] = useState ( {
       date: '',
       time: '',
       guests: '',
       occasion: '',
-  })
+  });
 
   const handleChanges = (e) => {
-    setValues({...values, [e.target.name]:e.target.value})
-  }
+   const {name, value} = e.target;
+    setValues(prev => ({ ...prev, [name]: value}));
+    if (name === "date") {
+      const selectedDate = new Date(value);
+      const times = window.fetchAPI(selectedDate);
+      console.log("Available times:", times);
 
-  const handleBooking = (values) => {
-    setAvailableTimes(availableTimes =>
-      availableTimes.map(timeSlot => {
-        if (values.time === timeSlot.time) {
-          return {...timeSlot, isDisabled: true };
-        }
-        return timeSlot;
-      })
+    setAvailableTimes(
+      times.map((time, index) => ({
+        id: index,
+        time,
+        isDisabled: false,
+      }))
+      );
+    };
+  };
+
+  const handleBooking = (bookedTime) => {
+    setAvailableTimes(prev =>
+      prev.map(slot =>
+        slot.time === bookedTime ? { ...slot, isDisabled: true } : slot
+      )
     );
-    console.log(values.time);
   };
 
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(values);
-    setShowAlert(true);
-    setTimeout(() => setShowAlert(false), 3000);
-    handleBooking(values, availableTimes);
-  }
+    console.log("Submitting values:", values);
+
+    const wasSuccessful = window.submitAPI(values);
+
+    if (wasSuccessful) {
+      setShowAlert(true);
+      setTimeout(() => setShowAlert(false), 3000);
+      handleBooking(values.time);
+    } else {
+      console.error("Reservation failed.");
+    }
+  };
   return (
   <>
   <Container fluid className="m-0 p-0 vh-100">
@@ -73,7 +80,7 @@ function Reservations () {
     <label htmlFor="time">Choose Time</label>
     <select className="my-2 py-1 select" value={values.time} id="time" name="time" type="time" onChange={(e) => handleChanges(e)} required>
       <option value="" disabled hidden>Select a Time</option>
-    {availableTimes.map( (items) => <option key={items.id} disabled={items.isDisabled}>{items.time}</option>)}
+    {availableTimes.map( (item) => <option key={item.id} disabled={item.isDisabled}>{item.time}</option>)}
     </select>
     <label htmlFor="guests">Number of Guests</label>
     <input className="my-2" name="guests" type="number" placeholder="1" min={1} max={10} id="guests" onChange={(e) => handleChanges(e)} required></input>
