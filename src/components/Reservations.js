@@ -50,7 +50,6 @@ function Reservations () {
     setTimeout(() => setShowAlert(false), 3000);
     handleBooking(values, availableTimes);
   }
-
   return (
   <>
   <Container fluid className="m-0 p-0 vh-100">
@@ -72,15 +71,15 @@ function Reservations () {
     <label htmlFor="date">Choose Date</label>
     <input className="my-2" name="date" type="date" id="date" onChange={(e) => handleChanges(e)} required></input>
     <label htmlFor="time">Choose Time</label>
-    <select className="my-2 py-1 select" id="time" name="time" type="time" onChange={(e) => handleChanges(e)} required>
-      <option value="" disabled selected hidden></option>
+    <select className="my-2 py-1 select" value={values.time} id="time" name="time" type="time" onChange={(e) => handleChanges(e)} required>
+      <option value="" disabled hidden>Select a Time</option>
     {availableTimes.map( (items) => <option key={items.id} disabled={items.isDisabled}>{items.time}</option>)}
     </select>
     <label htmlFor="guests">Number of Guests</label>
     <input className="my-2" name="guests" type="number" placeholder="1" min={1} max={10} id="guests" onChange={(e) => handleChanges(e)} required></input>
     <label htmlFor="occasion">Occasion</label>
-    <select className="my-2 py-1" id="occasion" name="occasion" onChange={(e) => handleChanges(e)} required>
-      <option value="" disabled selected hidden>Select Occasion</option>
+    <select className="my-2 py-1" value={values.occasion} id="occasion" name="occasion" onChange={(e) => handleChanges(e)} required>
+      <option value="" disabled hidden>Select Occasion</option>
       <option>Birthday</option>
       <option>Anniversary</option>
     </select>
