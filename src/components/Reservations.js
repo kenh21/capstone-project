@@ -16,22 +16,21 @@ function Reservations () {
       occasion: '',
   });
 
-  const handleChanges = (e) => {
-   const {name, value} = e.target;
-    setValues(prev => ({ ...prev, [name]: value}));
+  const handleChanges = async (e) => {
+    const { name, value } = e.target;
+    setValues(prev => ({ ...prev, [name]: value }));
     if (name === "date") {
       const selectedDate = new Date(value);
-      const times = window.fetchAPI(selectedDate);
+      const times = await window.fetchAPI(selectedDate);
       console.log("Available times:", times);
-
-    setAvailableTimes(
-      times.map((time, index) => ({
-        id: index,
-        time,
-        isDisabled: false,
-      }))
+      setAvailableTimes(
+        times.map((time, index) => ({
+          id: index,
+          time,
+          isDisabled: false,
+        }))
       );
-    };
+    }
   };
 
   const handleBooking = (bookedTime) => {
@@ -74,7 +73,7 @@ function Reservations () {
     </Row>
     <Container fluid className="hero vh-100 pt-5">
       <Row className="justify-content-center">
-  <form className="bg-light py-5 forms col-4" onSubmit={handleSubmit}>
+  <form data-testid="reservation-form" className="bg-light py-5 forms col-4" onSubmit={handleSubmit}>
     <label htmlFor="date">Choose Date</label>
     <input className="my-2" name="date" type="date" id="date" onChange={(e) => handleChanges(e)} required></input>
     <label htmlFor="time">Choose Time</label>
@@ -90,7 +89,8 @@ function Reservations () {
       <option>Birthday</option>
       <option>Anniversary</option>
     </select>
-    <input className="mt-4 submitBtn" type="submit" value="Make Your reservation" ></input>
+    <label htmlFor="submit"></label>
+    <input name="submit" className="mt-4 submitBtn" type="submit" value="Make Your Reservation" ></input>
   </form>
   </Row>
   <Row className="justify-content-center">

@@ -204,6 +204,11 @@ ul {
   border-color: white !important;
 }
 
+form:invalid input[type="submit"]{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .maxwidth-1200 {
   max-width: 1200px !important;
 }
