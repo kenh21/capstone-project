@@ -1,4 +1,7 @@
 import { Col, Row, Container, Button } from "react-bootstrap";
+import Header from "./Header";
+import NavBar from "./NavBar";
+import Menu from "./Menu";
 import Bruchetta from "../Images/bruchetta.jpg"
 import GreekSalad from "../Images/greek-salad.jpg"
 import LemonDessert from "../Images/lemon dessert.jpg"
@@ -17,10 +20,17 @@ import Cards from "./Cards";
 function OnlineMenu () {
     return (
     <>
-        <Container fluid className="w-75">
+    <Container fluid className="m-0 p-0 vh-100">
             <Row>
-
+                    <Col className="ms-5 py-3">
+                    <Header />
+                    </Col>
+                    <Col className="py-3 align-content-center">
+                    <NavBar />
+                    <Menu />
+                </Col>
             </Row>
+            <Container fluid className="w-75">
             <Row className="mt-5 justify-content-evenly">
             <Col className="p-0 m-0 col-auto">
                 <Cards image={GreekSalad} title="Greek salad" cost={12.99} text="The famous greek salad of
@@ -96,6 +106,7 @@ function OnlineMenu () {
                 display="flex" />
                 </Col>
                 </Row>
+        </Container>
         </Container>
     </>
     )
