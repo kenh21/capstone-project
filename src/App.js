@@ -1,11 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
 import './App.css';
 import Layout from './Layout';
 import OnlineMenu from './components/OnlineMenu';
 import About from './components/About';
 import Reservations from './components/Reservations';
-import OrderOnline from './components/OnlineMenu';
 import Login from './components/Login';
 
 function App() {
@@ -16,7 +14,6 @@ function App() {
      <Route path='/About' element={<About />} />
      <Route path='/OnlineMenu' element={<OnlineMenu />} />
      <Route path='/Reservations' element={<Reservations />} />
-     <Route path='/OrderOnline' element={<OrderOnline />} />
      <Route path='/Login' element={<Login />} />
      </Routes>
     </BrowserRouter>

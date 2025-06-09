@@ -40,7 +40,6 @@ const Menu = () => {
               <HashLink className='text-dark fw-bolder my-1 px-3' smooth to='#about'>About</HashLink>
               <Nav.Link className='text-dark fw-bolder' href='/OnlineMenu'>Menu</Nav.Link>
               <Nav.Link className='text-dark fw-bolder' href='/Reservations'>Reservations</Nav.Link>
-              <Nav.Link className='text-dark fw-bolder' href='/OnlineMenu'>Order Online</Nav.Link>
               <Nav.Link className='text-dark fw-bolder' href='/Login'>Login</Nav.Link>
             </Nav>
         </Offcanvas.Body>

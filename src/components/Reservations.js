@@ -53,6 +53,7 @@ function Reservations () {
       setTimeout(() => setShowAlert(false), 3000);
       handleBooking(values.time);
     } else {
+      alert("Reservation failed. Please try again.")
       console.error("Reservation failed.");
     }
   };
@@ -90,7 +91,7 @@ function Reservations () {
       <option>Anniversary</option>
     </select>
     <label htmlFor="submit"></label>
-    <input name="submit" className="mt-4 submitBtn" type="submit" value="Make Your Reservation" ></input>
+    <input name="submit" className="mt-4 submitBtn" type="submit" value="Make Your Reservation" aria-label="on click"></input>
   </form>
   </Row>
   <Row className="justify-content-center">

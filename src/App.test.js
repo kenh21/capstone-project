@@ -36,3 +36,4 @@ test('Tests that form inputs are valid', () => {
   expect(timeSelected.checkValidity()).toBe(false);
 })
 
+

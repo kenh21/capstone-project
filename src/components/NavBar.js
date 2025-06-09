@@ -20,7 +20,6 @@ return (
         <HashLink smooth='true' to='#about' className='text-dark fw-bolder justify-content-center align-content-center ps-3'>About</HashLink>
         <Nav.Link href='/OnlineMenu' className='text-dark fw-bolder pe-0'>Menu</Nav.Link>
         <Nav.Link href='/Reservations'className='text-dark fw-bolder pe-0'>Reservations</Nav.Link>
-        <Nav.Link href='/OrderOnline'className='text-dark fw-bolder pe-0'>Order Online</Nav.Link>
         <Nav.Link href='/Login'className='text-dark fw-bolder pe-0'>Login</Nav.Link>
     </Nav>
 )
