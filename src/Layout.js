@@ -14,7 +14,7 @@ function Layout () {
     return (
         < >
         <Container fluid className='m-0 p-0'>
-          <Row className='header'>
+          <Row className='header m-3'>
             <Col>
               <Header />
             </Col>

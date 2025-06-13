@@ -2,6 +2,7 @@ import { Container, Row, Col, Alert } from "react-bootstrap";
 import Header from "./Header";
 import NavBar from "./NavBar";
 import Menu from "./Menu";
+import  Image from 'react-bootstrap/Image';
 import '../App.css';
 import { useState } from "react";
 function Login () {
@@ -40,6 +41,10 @@ function Login () {
     </Row>
 <Container fluid className="md-0 pd-0 vh-100 align-content-center hero">
     <Row className="mb-5 pb-5">
+        <h2
+        className="d-flex justify-content-center fade-in">
+            Welcome To The Little Lemon
+        </h2>
         <h3
         className="d-flex justify-content-center fade-in">
             Sign Up To Get Points To Redeem For Rewards!
