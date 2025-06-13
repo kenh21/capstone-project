@@ -76,16 +76,16 @@ function Reservations () {
       <Row className="justify-content-center">
   <form data-testid="reservation-form" className="bg-light py-5 forms col-4" onSubmit={handleSubmit}>
     <label htmlFor="date">Choose Date</label>
-    <input className="my-2" name="date" type="date" id="date" onChange={(e) => handleChanges(e)} required></input>
+    <input className="my-2 selected" name="date" type="date" id="date" onChange={(e) => handleChanges(e)} required></input>
     <label htmlFor="time">Choose Time</label>
-    <select className="my-2 py-1 select" value={values.time} id="time" name="time" type="time" onChange={(e) => handleChanges(e)} required>
+    <select className="my-2 py-1 select selected" value={values.time} id="time" name="time" type="time" onChange={(e) => handleChanges(e)} required>
       <option value="" disabled hidden>Select a Time</option>
     {availableTimes.map( (item) => <option key={item.id} disabled={item.isDisabled}>{item.time}</option>)}
     </select>
     <label htmlFor="guests">Number of Guests</label>
-    <input className="my-2" name="guests" type="number" placeholder="1" min={1} max={10} id="guests" onChange={(e) => handleChanges(e)} required></input>
+    <input className="my-2 selected" name="guests" type="number" placeholder="1" min={1} max={10} id="guests" onChange={(e) => handleChanges(e)} required></input>
     <label htmlFor="occasion">Occasion</label>
-    <select className="my-2 py-1" value={values.occasion} id="occasion" name="occasion" onChange={(e) => handleChanges(e)} required>
+    <select className="my-2 py-1 selected" value={values.occasion} id="occasion" name="occasion" onChange={(e) => handleChanges(e)} required>
       <option value="" disabled hidden>Select Occasion</option>
       <option>Birthday</option>
       <option>Anniversary</option>
