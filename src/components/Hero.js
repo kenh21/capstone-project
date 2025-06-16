@@ -14,7 +14,7 @@ function Hero() {
         <h1 className="hero-section-h1-text">Little Lemon</h1>
         <h3 className="main-h2-text mt-2">Chicago</h3>
         <p className="main-body-text">Velit sint ea incididunt velit commodo amet aute et in sunt deserunt ipsum sint minim.</p>
-        <Button href='Reservations' type="submit" className="mt-5 p-3 mb-md-5 main-button" aria-label="on click">
+        <Button href='Reservations' type="submit" className="mt-5 p-3 mb-md-5 main-button selected-button" aria-label="on click">
             Reserve a Table
         </Button>
         </Col>
