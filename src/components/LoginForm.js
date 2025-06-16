@@ -10,12 +10,12 @@ function LoginForm () {
             password: '',
         })
         const [showAlert, setShowAlert] = useState(false);
-    
+
         const handleChanges = (e) => {
             const { name, value } = e.target;
             setValues(prev => ({ ...prev, [name]: value }))
         }
-    
+
         const handleSubmit = (e) => {
             e.preventDefault();
             console.log("Submitting values:", values);
@@ -36,7 +36,7 @@ function LoginForm () {
                 type="text"
                 name="userName"
                 id="userName"
-                minlength="3"
+                minLength={3}
                 placeholder='"Mimi21"'
                 required
                 onChange={(e) => {handleChanges(e)}}>

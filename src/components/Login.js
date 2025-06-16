@@ -1,11 +1,27 @@
-import { Container, Row, Col, Alert } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Header from "./Header";
 import NavBar from "./NavBar";
 import Menu from "./Menu";
 import LoginForm from "./LoginForm";
+import SignUpForm from "./SignUpForm";
+import { useState } from "react";
 import '../App.css';
 
 function Login () {
+   const [isLogin, setIsLogin] = useState(true);
+   let formToRender;
+   if(isLogin) {
+    formToRender = <LoginForm />;
+   } else {
+    formToRender = <SignUpForm />;
+   }
+
+   let buttonText;
+   if(isLogin) {
+    buttonText = "Don't have an account? Click here to Sign up"
+   } else {
+    buttonText = "Already have an account? Log in"
+   }
     return (
 <Container fluid className="m-0 p-0 vh-100">
     <Row className="me-5">
@@ -29,12 +45,16 @@ function Login () {
         </h3>
     </Row>
     <Row className="justify-content-center">
-        <LoginForm />
+        {formToRender}
+    </Row>
+    <Row className="mt-0 justify-content-center">
+    <button onClick={() => setIsLogin(prev => !prev)}
+        className="py-5 sign-up-button">
+            {buttonText}
+    </button>
     </Row>
 </Container>
 </Container>
-
-
     )
 }
 
