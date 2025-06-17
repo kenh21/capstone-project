@@ -14,11 +14,15 @@ function About() {
                 ms-5 ps-5">
                 <h1 className="hero-section-h1-text">Little Lemon</h1>
                 <h3 className="testimonials-h2-text">Chicago</h3>
-                <p className="main-body-text-bl main-text-p mt-3 pt-3 w-75">Amet minim mollit non deserunt ullamco
-                est sit aliqua dolor do amet sint. Velit officia consequat duis enim
-                velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                int. Velit officia consequat duis enim velit mollit.</p>
+                <p className="main-body-text-bl main-text-p mt-3 pt-3 w-75">
+                At The Little Lemon, every dish tells a story passed down
+                through generations. Rooted in Mediterranean tradition and
+                 inspired by our family's heritage, we bring time-honored
+                 recipes to life with a fresh, California twist. Gather
+                 with us to enjoy comforting flavors, shared memories,
+                 and the warmth of home. At The Little Lemon, every dish
+                tells a story passed down through generations.
+                </p>
                 </Col>
                 <Col className="mt-5 mb-5 img-col">
                     <Image className=" img-top img-border-style" src={Top} width={272} height={182} alt="photo of the owners"/>
