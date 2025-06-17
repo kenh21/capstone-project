@@ -6,7 +6,7 @@ function Cards (props) {
     return (
         <Container fluid>
             <Col>
-                <Card className="cards-background my-4"
+                <Card className="cards-background my-4 cards-selected"
                       style={{ width: '265px', height: '439px' }}>
                 <Card.Img variant="top" src={props.image} />
                 <Card.Body className="d-flex row">
@@ -16,7 +16,7 @@ function Cards (props) {
                     <Card.Text className="mt-3 pb-0 mb-1">
                     {props.text}
                     </Card.Text>
-                    <Button variant="submit" className={`d-${props.display} menu-btn w-50 ms-1`}>
+                    <Button variant="submit" className={`d-${props.display} menu-btn w-50 ms-1 sign-up-button`}>
                     Add to Order
                     </Button>
                 </Card.Body>

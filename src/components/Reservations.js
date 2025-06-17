@@ -70,7 +70,7 @@ function Reservations () {
       </Col>
     </Row>
     <Row className="justify-content-center pb-5">
-    <Image src={Restaurant} className="rest-img"/>
+    <Image src={Restaurant} className="rest-img fade-image"/>
     </Row>
     <Container fluid className="hero vh-100 pt-5">
       <Row className="justify-content-center">
