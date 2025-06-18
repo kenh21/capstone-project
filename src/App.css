@@ -96,7 +96,6 @@
   height: 21px;
 }
 
-
 .toggle-button .bar {
   height: 3px;
   width: 100%;
@@ -115,6 +114,15 @@
 .sign-up-button:hover {
 text-shadow:  2px 2px 4px rgba(0, 0, 0, 0.5);
 transition: .5s ease;
+}
+
+.nav-text:hover {
+text-shadow:  2px 5px 8px rgba(0, 0, 0, 0.9);
+transition: .5s ease;
+}
+
+.text-white {
+  color: white;
 }
 
 .cards-selected:hover {
@@ -247,6 +255,12 @@ ul {
   font-size: 40px;
 }
 
+.nav-bar-text {
+  font-family: 'Karla' !important;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
 .main-body-text {
   color: white;
   font-family: 'Karla';
@@ -266,12 +280,21 @@ ul {
   font-size: 16px;
 }
 
+.card-header-text {
+  color: black;
+  font-weight: 550 !important;
+  font-family: 'Karla';
+  font-size: 20px;
+}
+
+
+
 .main-button {
   background-color: #F4CE14 !important;
   border-color: #F4CE14 !important;
   font-weight: bolder !important;
   font-size: 20px !important;
-  font-family: 'Karla';
+  font-family: 'Karla'!important;
 }
 
 .cards-background {

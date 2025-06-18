@@ -16,7 +16,7 @@ function Highlights () {
                 align-items-center
                 mt-5
                 ms-5">
-                <h2>This Weeks Specials!</h2>
+                <h2 className="testimonials-h2-text">This Weeks Specials!</h2>
                 </Col>
                 <Col className=" 
                 d-flex 

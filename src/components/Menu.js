@@ -35,12 +35,53 @@ const Menu = () => {
         </Col>
         <Col>
         <Offcanvas.Body className='mt-3'>
-            <Nav className='justify-content-end flex-grow-1 pe-3'>
-              <Nav.Link className='text-dark fw-bolder' href='/'>Home</Nav.Link>
-              <HashLink className='text-dark fw-bolder my-1 px-3' smooth to='#about'>About</HashLink>
-              <Nav.Link className='text-dark fw-bolder' href='/OnlineMenu'>Menu</Nav.Link>
-              <Nav.Link className='text-dark fw-bolder' href='/Reservations'>Reservations</Nav.Link>
-              <Nav.Link className='text-dark fw-bolder' href='/Login'>Login</Nav.Link>
+            <Nav 
+            className='
+            justify-content-end
+            flex-grow-1
+            pe-3'>
+              <Nav.Link
+                  className='
+                  text-dark
+                  fw-bolder
+                  nav-text'
+                  href='/'>
+                    Home
+              </Nav.Link>
+              <HashLink
+                  className='
+                  text-dark
+                  fw-bolder
+                  my-1
+                  px-3
+                  nav-text'
+                  smooth to='#about'>
+                    About
+              </HashLink>
+              <Nav.Link
+                  className='
+                  text-dark
+                  fw-bolder
+                  nav-text'
+                  href='/OnlineMenu'>
+                    Menu
+              </Nav.Link>
+              <Nav.Link
+                className='
+                  text-dark
+                  fw-bolder
+                  nav-text'
+                  href='/Reservations'>
+                    Reservations
+              </Nav.Link>
+              <Nav.Link
+                  className='
+                  text-dark
+                  fw-bolder
+                  nav-text'
+                  href='/Login'>
+                    Login
+              </Nav.Link>
             </Nav>
         </Offcanvas.Body>
         </Col>

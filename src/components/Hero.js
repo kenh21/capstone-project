@@ -16,7 +16,14 @@ function Hero() {
         <p className="main-body-text">Rooted in family
         tradition, our Mediterranean flavors are served
         fresh with a California soul.</p>
-        <Button href='Reservations' type="submit" className="mt-5 p-3 mb-md-5 main-button selected-button" aria-label="on click">
+        <Button href='Reservations' type="submit"
+        className="
+        mt-5
+        p-3
+        mb-md-5
+        main-button
+        selected-button"
+        aria-label="on click">
             Reserve a Table
         </Button>
         </Col>
@@ -25,7 +32,10 @@ function Hero() {
         align-items-center
         lg-pe-5
         justify-content-lg-end">
-            <Image src='/Images/hero-image.jpg' alt='hero-image' className="
+            <Image
+            src='/Images/hero-image.jpg'
+            alt='hero-image'
+            className="
             m-5
             rounded-4
             "/>
