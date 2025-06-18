@@ -22,7 +22,8 @@ function Hero() {
         p-3
         mb-md-5
         main-button
-        selected-button"
+        selected-button
+        "
         aria-label="on click">
             Reserve a Table
         </Button>

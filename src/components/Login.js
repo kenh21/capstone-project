@@ -36,11 +36,11 @@ function Login () {
 <Container fluid className="md-0 pd-0 vh-100 align-content-center hero">
     <Row className="mb-5 pb-5">
         <h2
-        className="d-flex justify-content-center fade-in">
+        className="d-flex justify-content-center fade-in testimonials-h2-text">
             Welcome To The Little Lemon
         </h2>
         <h3
-        className="d-flex justify-content-center fade-in">
+        className="d-flex justify-content-center fade-in sign-up-subheader-text">
             Sign Up To Get Points To Redeem For Rewards!
         </h3>
     </Row>

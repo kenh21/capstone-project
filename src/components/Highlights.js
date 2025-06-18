@@ -27,7 +27,8 @@ function Highlights () {
                     <Button href='/OnlineMenu' type="submit" className="
                     p-3 
                     main-button
-                    selected-button">
+                    selected-button
+                    button-height">
                     Online Menu
                     </Button>
                 </Col>

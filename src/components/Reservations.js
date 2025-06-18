@@ -75,23 +75,23 @@ function Reservations () {
     <Container fluid className="hero vh-100 pt-5">
       <Row className="justify-content-center">
   <form data-testid="reservation-form" className="bg-light py-5 forms col-4" onSubmit={handleSubmit}>
-    <label htmlFor="date">Choose Date</label>
-    <input className="my-2 selected" name="date" type="date" id="date" onChange={(e) => handleChanges(e)} required></input>
-    <label htmlFor="time">Choose Time</label>
-    <select className="my-2 py-1 select selected" value={values.time} id="time" name="time" type="time" onChange={(e) => handleChanges(e)} required>
+    <label htmlFor="date" className="ratings-text">Choose Date</label>
+    <input className="my-2 selected main-body-text-bl" name="date" type="date" id="date" onChange={(e) => handleChanges(e)} required></input>
+    <label htmlFor="time" className="ratings-text">Choose Time</label>
+    <select className="my-2 py-1 selected main-body-text-bl" value={values.time} id="time" name="time" type="time" onChange={(e) => handleChanges(e)} required>
       <option value="" disabled hidden>Select a Time</option>
     {availableTimes.map( (item) => <option key={item.id} disabled={item.isDisabled}>{item.time}</option>)}
     </select>
-    <label htmlFor="guests">Number of Guests</label>
-    <input className="my-2 selected" name="guests" type="number" placeholder="1" min={1} max={10} id="guests" onChange={(e) => handleChanges(e)} required></input>
-    <label htmlFor="occasion">Occasion</label>
-    <select className="my-2 py-1 selected" value={values.occasion} id="occasion" name="occasion" onChange={(e) => handleChanges(e)} required>
+    <label htmlFor="guests" className="ratings-text">Number of Guests</label>
+    <input className="my-2 selected main-body-text-bl" name="guests" type="number" placeholder="1" min={1} max={10} id="guests" onChange={(e) => handleChanges(e)} required></input>
+    <label htmlFor="occasion" className="ratings-text">Occasion</label>
+    <select className="my-2 py-1 selected main-body-text-bl" value={values.occasion} id="occasion" name="occasion" onChange={(e) => handleChanges(e)} required>
       <option value="" disabled hidden>Select Occasion</option>
       <option>Birthday</option>
       <option>Anniversary</option>
     </select>
-    <label htmlFor="submit"></label>
-    <input name="submit" className="mt-4 submitBtn" type="submit" value="Make Your Reservation" aria-label="on click"></input>
+    <label htmlFor="submit" className="ratings-text"></label>
+    <input name="submit" className="mt-4 submitBtn form-buttons" type="submit" value="Make Your Reservation" aria-label="on click"></input>
   </form>
   </Row>
   <Row className="justify-content-center">

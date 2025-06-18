@@ -109,6 +109,9 @@
   background: none !important;
   border-color: none;
   border-style: none;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Karla' !important;
 }
 
 .sign-up-button:hover {
@@ -246,7 +249,7 @@ ul {
 .main-h2-text {
   color: white;
   font-family: 'Markazi Text';
-  font-size: 40px;
+  font-size: 40px !important;
 }
 .testimonials-h2-text {
   color:black;
@@ -255,10 +258,27 @@ ul {
   font-size: 40px;
 }
 
+.sign-up-subheader-text {
+  color:black;
+  font-weight: 450;
+  font-family: 'Karla';
+  font-size: 28px;
+}
+
+.button-height {
+  height: 64px;
+}
+
 .nav-bar-text {
   font-family: 'Karla' !important;
   font-size: 18px;
   font-weight: bolder;
+}
+
+.nav-bar-header-text {
+  font-family: 'Karla' !important;
+  font-size: 20px;
+  font-weight: bolder !important;
 }
 
 .main-body-text {
@@ -285,6 +305,12 @@ ul {
   font-weight: 550 !important;
   font-family: 'Karla';
   font-size: 20px;
+}
+
+.form-buttons {
+  font-weight: bolder !important;
+  font-size: 16px !important;
+  font-family: 'Karla'!important;
 }
 
 
@@ -399,6 +425,9 @@ form:invalid input[type="submit"]{
      justify-content: center;
      transform: translate(-200px, 70px);
    }
+   .button-height {
+    display: flex;
+  }
 }
 @media  only screen and (max-width: 440px) {
   .img-col {
@@ -423,6 +452,12 @@ form:invalid input[type="submit"]{
     justify-self: center;
     width: 300px;
     border-radius: 16px;
+  }
+  .button-height {
+    padding-right: none !important;
+    margin-left: 155px !important;
+    margin-right: auto !important;
+    justify-self: center !important;
   }
 }
 @media  only screen and (max-width: 380px) {

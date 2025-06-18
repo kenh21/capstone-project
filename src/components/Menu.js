@@ -29,7 +29,7 @@ const Menu = () => {
        <Container fluid>
       <OffcanvasHeader closeButton>
         <Col>
-        <Offcanvas.Title className='position-absolute top-0 start-10 mt-5'>
+        <Offcanvas.Title className='position-absolute top-0 start-10 mt-5 nav-bar-header-text'>
           Navigation
         </Offcanvas.Title>
         </Col>
@@ -39,7 +39,8 @@ const Menu = () => {
             className='
             justify-content-end
             flex-grow-1
-            pe-3'>
+            pe-3
+            nav-bar-text'>
               <Nav.Link
                   className='
                   text-dark

@@ -31,11 +31,11 @@ function SignUpForm () {
     <Row className="justify-content-center">
         <form className="bg-light py-5 forms col-4"onSubmit={handleSubmit}>
             <label
-                htmlFor="email">
+                htmlFor="email" className="ratings-text">
                 Enter Your Email
             </label>
             <input
-                className="my-2 selected"
+                className="my-2 selected main-body-text-bl"
                 type="email"
                 name="email"
                 placeholder='"Mimi21@gmail.com"'
@@ -43,11 +43,11 @@ function SignUpForm () {
                 onChange={(e) => {handleChanges(e)}}>
             </input>
             <label
-                htmlFor="userName">
+                htmlFor="userName" className="ratings-text">
                 Enter Your User Name
             </label>
             <input
-                className="my-2 selected"
+                className="my-2 selected main-body-text-bl"
                 type="text"
                 name="userName"
                 id="userName"
@@ -57,11 +57,11 @@ function SignUpForm () {
                 onChange={(e) => {handleChanges(e)}}>
             </input>
             <label
-                htmlFor="password">
+                htmlFor="password" className="ratings-text">
                 Enter Your Password
             </label>
             <input
-                className="my-2 selected"
+                className="my-2 selected main-body-text-bl"
                 type="password"
                 name="password"
                 id="password"
@@ -72,7 +72,7 @@ function SignUpForm () {
             </input>
             <input
                 name="submit"
-                className="mt-4 submitBtn"
+                className="mt-4 submitBtn form-buttons"
                 type="submit"
                 value="Sign Up"
                 aria-label="on click"
